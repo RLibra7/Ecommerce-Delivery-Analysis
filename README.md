@@ -1,89 +1,73 @@
 # E-commerce Delivery Performance & Fulfilment Bottleneck Analysis
 
-## 1. Project Overview
+## Project Overview
+This project analyzes e-commerce delivery performance using the Brazilian Olist e-commerce dataset. It uses SQL for data exploration and analysis and Power BI to build an interactive dashboard that helps identify delivery delays, monthly trends, state-wise performance, and payment patterns.
 
-This project analyses e-commerce order and delivery data to understand delivery performance, identify fulfilment bottlenecks, and explore factors that affect customer order delivery.
+## Problem Statement
+Late deliveries can reduce customer satisfaction and affect business performance. This project analyzes historical e-commerce orders to understand delivery performance and identify areas where logistics operations may need improvement.
 
-Using MySQL for data analysis and Microsoft Power BI for visualisation, the project presents key performance indicators (KPIs) and interactive charts to support data-driven business decisions.
-
-## 2. Problem Statement
-
-E-commerce businesses need to deliver orders on time while maintaining efficient fulfilment operations. Delays can affect customer satisfaction and operational performance.
-
-This project analyses historical order data to measure delivery performance, identify regions with longer delivery times, and understand monthly delivery trends.
-
-## 3. Project Objectives
-
-- Analyse order status and delivery performance.
+## Objectives
+- Analyze order status and delivery performance.
 - Measure on-time and late deliveries.
-- Calculate average delivery time.
+- Track monthly delivery trends.
 - Compare delivery performance across states.
-- Analyse monthly delivery trends.
-- Explore orders and payment values by payment method.
-- Present insights through an interactive Power BI dashboard.
+- Explore product categories and payment methods.
+- Present key findings through a Power BI dashboard.
 
-## 4. Tools and Technologies
+## Tools & Technologies
+- **MySQL:** Data exploration, quality checks, SQL queries, joins, aggregations, and views.
+- **Microsoft Power BI:** Dashboard creation, KPI cards, and charts.
+- **Dataset:** Brazilian E-commerce Public Dataset by Olist.
 
-- **MySQL Workbench:** SQL queries, data exploration and analysis.
-- **Microsoft Power BI:** Data visualisation and dashboard development.
-- **SQL:** Data aggregation, filtering, joins and analytical queries.
-- **Olist E-commerce Dataset:** Historical e-commerce order data.
+## Key Performance Indicators (KPIs)
 
-## 5. Key Performance Indicators
-
-The dashboard currently displays the following metrics:
-
-| KPI | Value |
+| KPI | Result |
 |---|---:|
-| Total Orders | 99.441K |
+| Total Orders | 99,441 |
 | Delivered Orders | 96,478 |
 | On-Time Delivery | 91.88% |
 | Average Delivery Time | 12.50 days |
 
-*These values should be interpreted according to the filters and definitions used in the dashboard.*
+*Figures are based on the analysis and dashboard calculations in this project.*
 
-## 6. Dashboard Analysis
+## Dashboard Features
+- Order status distribution
+- Monthly delivery performance trends
+- On-time versus late deliveries
+- Average delivery time by state
+- Order volume by state
+- Average delivery time by month
+- Orders by payment method
+- Payment value by payment method
 
-The Power BI dashboard covers:
+## SQL Analysis
+The SQL script includes:
+- Database exploration and order counts
+- Data quality checks for missing values and duplicate order IDs
+- A delivery analysis view
+- On-time and late delivery calculations
+- Monthly and state-wise delivery analysis
+- Product-category delivery analysis
+- Payment method and payment value analysis
 
-1. Order status distribution.
-2. Monthly delivery performance trends.
-3. On-time versus late deliveries.
-4. Average delivery time by state.
-5. Order volume by state.
-6. Average delivery time by month.
-7. Orders by payment method.
-8. Payment value by payment method.
+## Business Value
+The analysis can help e-commerce and logistics teams:
+- Identify states with higher delivery delays.
+- Monitor changes in delivery performance over time.
+- Understand delivery patterns across product categories.
+- Support data-driven logistics and fulfilment decisions.
 
-## 7. Business Value
+## Project Structure
+- `ecommerce_delivery_analysis.sql` — SQL analysis script
+- `PowerBI-Dashboard-Screenshots.pdf` — Dashboard screenshots
+- `README.md` — Project documentation
+- `Power BI Dashboard (.pbix)` — Interactive dashboard file (available locally)
 
-The analysis can help e-commerce teams:
+## Future Scope
+- Analyze the impact of freight charges and distance on delivery time.
+- Investigate possible causes of late deliveries.
+- Add interactive filters and drill-through analysis.
+- Develop recommendations based on regional delivery patterns.
 
-- Identify states with comparatively longer delivery times.
-- Monitor delivery performance over time.
-- Understand the distribution of successful and unsuccessful orders.
-- Compare order volume across regions and payment methods.
-- Investigate areas that may require further operational improvement.
-
-## 8. Project Structure
-
-```text
-Ecommerce-Delivery-Analysis/
-├── SQL/
-├── PowerBI/
-├── Screenshots/
-└── Documentation/
-    └── README.md
-```
-
-## 9. Conclusion
-
-This project demonstrates how SQL and Power BI can be used together to analyse e-commerce delivery performance. It transforms raw order data into measurable KPIs and visual insights that can support operational monitoring and further investigation of fulfilment bottlenecks.
-
-## 10. Future Scope
-
-- Analyse delivery delays by seller and product category.
-- Investigate the relationship between estimated and actual delivery dates.
-- Add customer review analysis.
-- Develop predictive models for delivery delays.
-- Automate data refresh and reporting.
+## Conclusion
+This project demonstrates practical use of SQL and Power BI to analyze e-commerce delivery performance, summarize operational KPIs, and present business-focused insights through a dashboard.
