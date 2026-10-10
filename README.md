@@ -61,7 +61,7 @@ The analysis can help e-commerce and logistics teams:
 - `ecommerce_delivery_analysis.sql` — SQL analysis script
 - `PowerBI-Dashboard-Screenshots.pdf` — Dashboard screenshots
 - `README.md` — Project documentation
-- `Power BI Dashboard (.pbix)` — Interactive dashboard file (https://drive.google.com/file/d/1ye4JT721Df03gQ1nELfShckmdj7cZ1wN/view?usp=sharing)
+- `Power BI Dashboard (.pbix)` — Interactive dashboard file (available locally)
 
 ## Future Scope
 - Analyze the impact of freight charges and distance on delivery time.
